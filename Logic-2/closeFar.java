@@ -8,5 +8,5 @@ public boolean close(int x, int n) {
 }
 
 public boolean far(int x, int n) {
-  return (Math.abs(x - n)? >= 2)? true : false;
+  return (Math.abs(x - n) >= 2)? true : false;
 }
