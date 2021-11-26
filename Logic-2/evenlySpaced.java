@@ -1,4 +1,4 @@
-public boolean evenlySpace(int a, int b, int c) {
+public boolean evenlySpaced(int a, int b, int c) {
   if(a == b && b == c) return true;
   int smallest = (a < b)? a : b; smallest = (smallest < c)? smallest : c;
   int middle = 0;
