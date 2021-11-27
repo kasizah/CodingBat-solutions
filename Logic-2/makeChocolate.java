@@ -1,4 +1,4 @@
-// PREVIOUS SOLUTION -> DOESN'T WORK
+// PREVIOUS SOLUTION -> DOESN'T WORK FOR ALL SOLUTIONS
 /**
  *  public int makeChocolate(int small, int big, int goal) {
  *    int remainder = goal % 5;
