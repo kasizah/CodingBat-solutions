@@ -20,6 +20,7 @@ public int makeChocolate(int small, int big, int goal) {
       goal -= big * 5;
     else
       goal %= 5;
-  } else if(goal <= small) return goal;
-  else return -1;
+  } 
+  if(goal <= small) return goal;
+  return -1;
 }
