@@ -1,9 +1,9 @@
 public String stringX(String str) {
   String result = "";
-  if(str.length() <= 1) return str;
-  for(int i = 1; i < str.length() - 1; i++) {
-    result += str.charAt(i) != 'x'? str.charAt(i) : "";
+  for(int i = 0; i < str.length(); i++) {
+    if(!(i > 0 && i < str.length()-1 && str.charAt(i) == 'x')) {
+      result += str.charAt(i);
+    }
   }
-  result = str.charAt(0) + result + str.charAt(str.length() - 1);
   return result;
 }
