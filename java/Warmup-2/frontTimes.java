@@ -1,5 +1,12 @@
 public String frontTimes(String str, int n) {
-  String s = "", f3 = (str.length() >= 3)? str.substring(0, 3) : str;
-  for(int i = 0; i < n; i++) s += f3;
-  return s;
+  String result = "", front3 = "";
+  if(str.length() >= 3) {
+    front3 = str.substring(0, 3);
+  } else {
+    front3 = str;
+  }
+  for(int i = 0; i < n; i++) {
+    result += front3;
+  }
+  return result;
 }
