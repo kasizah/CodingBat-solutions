@@ -1,9 +1,7 @@
 public String stringSplosion(String str) { 
-  String increment = "";
+  String result = "";
   for(int i = 0; i < str.length(); i++) {
-    for(int j = 0; j <= i; j++) {
-      increment += str.charAt(j);
-    }
+    result += str.substring(0, i+1);
   }
-  return increment;
+  return result;
 }
