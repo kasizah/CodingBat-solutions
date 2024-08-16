@@ -1,3 +1,3 @@
 public int sum3(int[] nums) {
-  return sum[0] + sum[1] + sum[2];
+    return nums[0] + nums[1] + nums[2];
 }
