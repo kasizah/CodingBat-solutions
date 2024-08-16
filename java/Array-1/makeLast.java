@@ -1,4 +1,6 @@
 public int[] makeLast(int[] nums) {
+    /* new array's length double that of original
+       array's length */
     int len2 = nums.length * 2;
     int[] array = new int[len2];
 
