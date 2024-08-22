@@ -1,6 +1,12 @@
 public String fizzString(String str) {
-  char chF = str.charAt(0), chL = str.charAt(str.length() - 1);
-  if(chF == 'f' && chL == 'b') return "FizzBuzz";
-  else if(chF == 'f') return "Fizz";
-  else return chL == 'b'? "Buzz" : str;
+    String ret = "";
+
+    // "Fizz" and "Buzz" can both be in the string.
+    ret += (str.charAt(0) == 'f')? "Fizz" : "";
+    ret += (str.charAt(str.length()-1) == 'b')? "Buzz" : "";
+
+    if(ret.equals("")) {
+        return str;
+    }
+    return ret;
 }
